@@ -1,16 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <!-- Change the URL in the content attribute to your Zoom link -->
-        <!--<meta http-equiv="refresh" content="0; url=https://teams.microsoft.com/meet/49666821324081?p=D6u7OrTsGHuhDr6SGC">-->
-    <title>Redirecting to Meeting...</title>
-    <script type="text/javascript">
-        // Backup JavaScript redirect in case meta refresh fails
-        window.location.href = "https://teams.microsoft.com/meet/49666821324081?p=D6u7OrTsGHuhDr6SGC"
-    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poster Q&A Session</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f7f9;
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            max-width: 90%;
+            width: 350px;
+        }
+        h1 { font-size: 1.5rem; margin-bottom: 10px; }
+        p { font-size: 1rem; color: #666; margin-bottom: 25px; }
+        
+        .btn {
+            display: inline-block;
+            background-color: #2D8CFF; /* Zoom Blue */
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: background-color 0.2s;
+            box-shadow: 0 2px 5px rgba(45, 140, 255, 0.3);
+        }
+        .btn:hover { background-color: #1a73e8; }
+        
+        .footer {
+            margin-top: 30px;
+            font-size: 0.8rem;
+            color: #999;
+        }
+    </style>
 </head>
 <body>
-    <p>Redirecting to the live Q&A session. If you are not redirected, 
-       <a href="https://teams.microsoft.com/meet/49666821324081?p=D6u7OrTsGHuhDr6SGC">click here</a>.</p>
+
+    <div class="container">
+        <h1>Research Poster Q&A</h1>
+        <p>Join the live video call to discuss this research with the author.</p>
+        
+        <!-- REPLACE THE URL BELOW WITH YOUR ACTUAL ZOOM LINK -->
+        <a href="https://zoom.us/j/your-meeting-id" class="btn">Join Zoom Meeting</a>
+        
+        <div class="footer">
+            IIT Delhi • Computer Graphics & Animation
+        </div>
+    </div>
+
 </body>
 </html>
